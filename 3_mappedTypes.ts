@@ -11,6 +11,8 @@ const jose: Alumno = { nombre: "jose", legajo: null }
 
 const joseOpcional: Opcional<Alumno> = { nombre: "jose", legajo: null }
 
+// Typescript: https://www.typescriptlang.org/docs/handbook/utility-types.html
+// Type-fest:  https://github.com/sindresorhus/type-fest
 
 
 
