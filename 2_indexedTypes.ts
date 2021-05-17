@@ -6,12 +6,15 @@ class Alumno {
 }
 
 let campo: keyof Alumno
+campo = 'nombre'
+campo = 'legajo'
+
 let tipoDeCampoNombre: Alumno["nombre"]
+tipoDeCampoNombre = "unString"
+
 let tipoDeCualquierCampo: Alumno[keyof Alumno]
-
-
-
-
+tipoDeCualquierCampo = "unString"
+tipoDeCualquierCampo = 5
 
 //------------------
 
