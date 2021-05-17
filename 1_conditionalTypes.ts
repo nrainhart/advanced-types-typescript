@@ -15,9 +15,9 @@ const y: number = valor({ valor: 95 })
 
 //------------------
 
-type EventName = 'INIT' | 'LOG_IN_ATTEMPT' | 'LOG_IN_SUCCESS'
+type EventName = 'VIEW' | 'LOG_IN_ATTEMPT' | 'LOG_IN_SUCCESS'
 
-type EventPayload<T> = T extends 'INIT' ? void
+type EventPayload<T> = T extends 'VIEW' ? void
     : T extends 'LOG_IN_ATTEMPT' ? { emailAdress: string }
     : T extends 'LOG_IN_SUCCESS' ? { accessToken: string }
     : never;

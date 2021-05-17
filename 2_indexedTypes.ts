@@ -31,7 +31,7 @@ const apellido = dameElCampo(pirulo, "apellido")
 
 type Event2 =
     | {
-        type: 'INIT'
+        type: 'VIEW'
     }
     | {
         type: 'LOG_IN_ATTEMPT'

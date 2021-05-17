@@ -20,7 +20,7 @@ const joseOpcional: Opcional<Alumno> = { nombre: "jose", legajo: null }
 
 type Event3 =
     | {
-        type: 'INIT'
+        type: 'VIEW'
     }
     | {
         type: 'LOG_IN_ATTEMPT'
