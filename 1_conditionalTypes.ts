@@ -10,8 +10,16 @@ function valor<N extends Nodo>(
     return nodo.valor as any
 }
 
-const x: string = valor({ valor: "foo" })
-const y: number = valor({ valor: 95 })
+const x = valor({ valor: "foo" })
+const y = valor({ valor: 95 })
+
+let unNodo: Nodo;
+if (Math.random() > 0.5) {
+    unNodo = { valor: "foo" }
+} else {
+    unNodo = { valor: 95 }
+}
+const z = valor(unNodo)
 
 //------------------
 
