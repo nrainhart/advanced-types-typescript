@@ -1,5 +1,5 @@
 interface Vaca {
-    mugi: () => string
+    mugi(): string
 }
 
 let unaVaca: Vaca
